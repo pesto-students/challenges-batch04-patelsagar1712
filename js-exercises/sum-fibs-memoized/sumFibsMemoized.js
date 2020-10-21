@@ -21,4 +21,4 @@ console.log(sumFibs(25));
 //Cache will be done later
 function cacheFunction() {}
 
-//export { sumFibs, cacheFunction };
+export { sumFibs, cacheFunction };
