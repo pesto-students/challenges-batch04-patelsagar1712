@@ -1,3 +1,4 @@
+/* eslint-disable spaced-comment */
 function fibo(n) {
   if (n <= 1) return n;
   return fibo(n - 1) + fibo(n - 2);
@@ -17,8 +18,17 @@ function sumFibs(num) {
   return sum;
 }
 
-console.log(sumFibs(25));
 //Cache will be done later
-function cacheFunction() {}
+function cacheFunction(sumFibsFn) {
+  const cache = {};
+  return (n) => {
+    if (n in cache) {
+      return cache[n];
+    }
+    const result = cacheFunction(n);
+    cache[n] = result;
+    return result;
+  };
+}
 
 export { sumFibs, cacheFunction };
