@@ -15,6 +15,8 @@ flipped('a', 'b', 'c', 'd');
 
 ### **What are some good real-life use cases for such a function?**
 *Write your response here*
+1) Returning reverse funtion can help in reversing any datatype and the function will be abstract.
+2) For small projects,Reverse array's /String can acts as encryption technqiue. 
 
 ### **What test cases can you add to the test file?**
 
